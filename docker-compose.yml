@@ -2,7 +2,7 @@ version: '3'
 
 services:
   back:
-    image: hernancr/as222s5_t09_bee:latest
+    image: dannalopez/as222s5_t09_be:latest
     ports:
       - "8085:8085"
     environment:
@@ -11,7 +11,7 @@ services:
       DATABASE_PASSWORD: ${DATABASE_PASSWORD}
       RAPIDAPI_KEY: ${RAPIDAPI_KEY} 
   front:
-    image: hernancr/apigptfrontend:latest
+    image: dannalopez/apigptfrontend:latest
     ports:
       - "4200:4200"
     environment:
